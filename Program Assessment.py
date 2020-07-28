@@ -1,3 +1,5 @@
+import happy
+
 print("Hello, World")
 
 day1 = str(input("How are you feeling today?".strip().lower()))
@@ -13,3 +15,4 @@ if day1 == sad:
     print("That's no good")
     print("Could you please explain further?")
 
+detail1 = str(input("Please go into further detail"))
