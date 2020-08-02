@@ -1,15 +1,18 @@
 import happy
+import sad
 
-print("Hello, World")
+# Greeting the user
+name = str(input("Hello, what is your name?"))
+print("Nice to meet you {}".format(name))
+# Establishing the user's feelings
+day1 = str(input("How are you feeling today?"))
 
-day1 = str(input("How are you feeling today?".strip().lower()))
+print("Today you were feeling {}".format(day1))
 
-print("Today you were feeling{}".format(day1))
-
+# Gathering further information
 if day1 == happy:
     print("That is great to hear")
     print("What made it so good?")
-
 
 if day1 == sad:
     print("That's no good")
