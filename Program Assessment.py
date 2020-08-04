@@ -4,6 +4,7 @@ import sad
 # Greeting the user
 name = str(input("Hello, what is your name?"))
 print("Nice to meet you {}".format(name))
+
 # Establishing the user's feelings
 day1 = str(input("How are you feeling today?"))
 
