@@ -5,6 +5,8 @@ import sad
 name = str(input("Hello, what is your name?"))
 print("Nice to meet you {}".format(name))
 
+age = int(input("To help adapt the advice to your needs, what is your age?"))
+
 # Establishing the user's feelings
 day1 = str(input("How are you feeling today?"))
 
@@ -20,3 +22,4 @@ if day1 == sad:
     print("Could you please explain further?")
 
 detail1 = str(input("Please go into further detail"))
+
