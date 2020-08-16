@@ -17,6 +17,7 @@ print("Today you were feeling {}".format(day1))
 # Gathering further information
 if day1 == happy:
     print("That is great to hear")
+
     print("What made it so good?")
 
 if day1 == sad:
