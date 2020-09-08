@@ -1,11 +1,10 @@
 import happy
-import sad
+import random
+
 
 # Getting to know the user
 name = str(input("Hello, what is your name?"))
 print("Nice to meet you {}".format(name))
-
-age = int(input("To help adapt the advice to your needs, what is your age?"))
 
 hobbies = str(input("Do you have any hobbies?"))
 
@@ -14,15 +13,17 @@ day1 = str(input("How are you feeling today?"))
 
 print("Today you were feeling {}".format(day1))
 
+happylist = ["That's good!", "Yay that's awesome!", "Nice!", "That is great to hear!"]
+sadlist = ["Oh no!", "That's terrible to hear!", "I hate to hear that"]
+
 # Gathering further information
-if day1 == happy:
-    print("That is great to hear")
+if day1 == 'happy':
+    print(random.choice(happylist))
+    happy_reasons = str(input("What made you feel like that?"))
 
-    print("What made it so good?")
+elif day1 == 'sad':
+    print(random.choice(sadlist))
+    print("What is it that made you feel sad?")
 
-if day1 == sad:
-    print("That's no good")
-    print("Could you please explain further?")
 
-detail1 = str(input("Please go into further detail"))
 
