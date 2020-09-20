@@ -25,5 +25,6 @@ elif day1 == 'sad':
     print(random.choice(sadlist))
     print("What is it that made you feel sad?")
 
-
-
+else:
+    print("Could you be more general? (e.g happy/sad)")
+    day1 = str(input("How are you feeling today?"))
