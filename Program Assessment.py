@@ -13,10 +13,11 @@ day1 = str(input("How are you feeling today?"))
 
 print("Today you were feeling {}".format(day1))
 
+# Creating variety of responses
 happylist = ["That's good!", "Yay that's awesome!", "Nice!", "That is great to hear!"]
 sadlist = ["Oh no!", "That's terrible to hear!", "I hate to hear that"]
 
-# Gathering further information
+# Giving advice based on basic response
 if day1 == 'happy':
     print(random.choice(happylist))
     happy_reasons = str(input("What made you feel like that?"))
@@ -34,6 +35,7 @@ elif day1 == 'sad':
     print("I hope that my advice helps you.")
     print("Best of luck to you.")
 
+# Giving advice based on a generalised response
 else:
     print("Alright well thank you for telling me")
     happyorsad = str(input("Would you say this feeling is more on the happy side or the sad side?"))
