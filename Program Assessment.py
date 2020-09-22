@@ -6,7 +6,7 @@ import random
 name = str(input("Hello, what is your name?"))
 print("Nice to meet you {}".format(name))
 
-hobbies = str(input("Do you have any hobbies?"))
+hobbies = str(input("Do you have any hobbies? If so what are they?"))
 
 # Establishing the user's feelings
 day1 = str(input("How are you feeling today?"))
@@ -26,5 +26,5 @@ elif day1 == 'sad':
     print("What is it that made you feel sad?")
 
 else:
-    print("Could you be more general? (e.g happy/sad)")
-    day1 = str(input("How are you feeling today?"))
+    print("Alright well thank you for telling me")
+    happyorsad = str(input("Would you say this feeling is more on the happy side or the sad side?"))
