@@ -16,6 +16,8 @@ print("Today you were feeling {}".format(day1))
 # Creating variety of responses
 happylist = ["That's good!", "Yay that's awesome!", "Nice!", "That is great to hear!"]
 sadlist = ["Oh no!", "That's terrible to hear!", "I hate to hear that"]
+farewelllist = ["I hope you begin to feel better", "It was great to hear what you had to say", "Have a great rest of your day", "Goodbye {}".format(name)]
+
 
 # Giving advice based on basic response
 if day1 == 'happy':
@@ -52,3 +54,9 @@ else:
         print("My advice is to try and avoid this happening and surround yourself with things that make you happy.")
         print("Hopefully this will help remove your negative feelings and improve your wellbeing overall.")
         print("Good luck my friend.")
+
+#Creating farewell function
+def farewell():
+    print(random.choice(farewelllist))
+
+farewell()
