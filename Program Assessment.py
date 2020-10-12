@@ -8,8 +8,13 @@ print("Nice to meet you {}".format(name))
 
 hobbies = str(input("Do you have any hobbies? If so what are they?"))
 
+#Brief understanding of feelings
+rating = float(input("On a scale from 1 to 10, with 1 being bad and 10 being good, how were you feeling today?"))
+
 # Establishing the user's feelings
 day1 = str(input("How are you feeling today?"))
+
+day1 = day1.lower()
 
 print("Today you were feeling {}".format(day1))
 
