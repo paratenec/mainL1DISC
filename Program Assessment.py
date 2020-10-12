@@ -8,7 +8,7 @@ print("Nice to meet you {}".format(name))
 
 hobbies = str(input("Do you have any hobbies? If so what are they?"))
 
-#Brief understanding of feelings
+# Brief understanding of feelings
 rating = float(input("On a scale from 1 to 10, with 1 being bad and 10 being good, how were you feeling today?"))
 
 # Establishing the user's feelings
@@ -45,22 +45,22 @@ elif day1 == 'sad':
 # Giving advice based on a generalised response
 else:
     print("Alright well thank you for telling me")
-    happyorsad = str(input("Would you say this feeling is more on the happy side or the sad side?"))
-    if happyorsad == 'happy':
+    happy_sad = str(input("Would you say this feeling is more on the happy side or the sad side?"))
+    if happy_sad == 'happy':
         embrace = str(input("What are the things that made you feel like that?"))
         print("Some of the things that made you happy were {}.".format(embrace))
         print("You also mentioned whether or not you had any hobbies.")
         print("I recommend that you continue to do these hobbies if you enjoy them, and keep doing the things that make you happy.")
         print("Hopefully my advice is able to improve your overall feelings.")
         print("You are doing great my friend keep it up.")
-    elif happyorsad == "sad":
+    elif happy_sad == "sad":
         avoid = str(input("What were the things that made you feel sad?"))
         print("You think that the things that made you feel sad were {}".format(avoid))
         print("My advice is to try and avoid this happening and surround yourself with things that make you happy.")
         print("Hopefully this will help remove your negative feelings and improve your wellbeing overall.")
         print("Good luck my friend.")
 
-#Creating farewell function
+# Creating farewell function
 def farewell():
     print(random.choice(farewelllist))
 
