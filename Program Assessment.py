@@ -11,6 +11,7 @@ hobbies = str(input("Do you have any hobbies? If so what are they?"))
 # Brief understanding of feelings
 rating = float(input("On a scale from 1 to 10, with 1 being bad and 10 being good, how were you feeling today?"))
 
+
 # Establishing the user's feelings
 day1 = str(input("How are you feeling today?"))
 
@@ -59,6 +60,12 @@ else:
         print("My advice is to try and avoid this happening and surround yourself with things that make you happy.")
         print("Hopefully this will help remove your negative feelings and improve your wellbeing overall.")
         print("Good luck my friend.")
+
+# For statement of inputted data
+data = [hobbies, day1]
+
+for x in data:
+    print("These are the things you enjoy doing and/or how you are feeling; {}".format(x))
 
 # Creating farewell function
 def farewell():
